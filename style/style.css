@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /*Primary */
+    --colorBrightOrange: #e38826;
+    --colorDarkCyan: #006970;
+    --colorVeryDarkCyan: #004241;
+
+    /*Neutral */
+    --colorParagraph: #ffffffbf;
+    --colorVeryLightGray: #f2f2f2; /*background, headings, buttons*/
+}
+
+body {
+    background-color: var(--colorVeryLightGray);    
+    color: var(--colorParagraph);
+    font-size: .9375em;    
+    padding: 1em;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    padding: 3rem 2.4rem;
+    width: 20.4375rem;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+}
+
+.sedan {
+    background-color: var(--colorBrightOrange);
+}
+
+.sedan .btn {
+    color: var(--colorBrightOrange);
+}
+
+.suv {
+    background-color: var(--colorDarkCyan);
+}
+
+.suv .btn {
+    color: var(--colorDarkCyan);
+}
+
+.luxury {
+    background-color: var(--colorVeryDarkCyan);
+}
+
+.luxury .btn {
+    color: var(--colorVeryDarkCyan);
+}
+
+.card-title {
+    color:var(--colorVeryLightGray);
+    font-family: 'Big Shoulders Display', cursive;
+    margin: 1.1rem 0;
+    text-transform: uppercase;
+}
+
+.card-p, .btn {
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    margin: 1rem 0;
+}
+
+.btn {
+    background-color: var(--colorVeryLightGray);
+    border: none;
+    border-radius: 2.5rem;
+    padding: .9375rem 2.375rem;
+}
+
+.btn:hover{
+    background: transparent;
+    color: var(--colorVeryLightGray);
+    border: .125rem solid var(--colorVeryLightGray);
+}
+
+.attribution { 
+    color: var(--colorVeryDarkCyan);
+    font-size: 11px; text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media screen and (min-width: 43.125em) {
+    .container {
+        height: 100vh;
+    }
+
+    .card {
+        height: 31.25rem;
+        width: 19.25rem;
+        padding: 3rem 2.6rem;
+    }
+}
